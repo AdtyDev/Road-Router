@@ -1,0 +1,112 @@
+.route-planner {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 30%;
+    background: #1e1e1e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .input-group input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  .input-group button {
+    background: #ff9800;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .swap-btn {
+    width: 100%;
+    background: #ff5722;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .map-section {
+    flex: 1;
+    height: 100vh;
+  }
+  
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Use Current Location Section */
+  .current-location-section {
+    margin: 15px 0;
+    padding: 10px;
+    background: #050505;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .current-location-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .current-location-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .current-location-buttons button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ddd;
+    transition: 0.3s;
+  }
+  
+  .current-location-buttons button.active {
+    background: #007bff;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+  }
+  
+  .current-location-buttons button:hover {
+    background: #0056b3;
+    color: white;
+  }
